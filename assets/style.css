@@ -64,15 +64,21 @@ header {
     border: 1px solid black;
     cursor: pointer;
 
-    animation: icon-imgs 2s ease-in-out;
+    animation: icon-img 2s ease-in-out;
 }
-@keyframes icon-imgs{
+@keyframes icon-img{
     0% {
-        transform: translateX(-200%);
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
     }
     50% {
-        transform: translateX(0);
+        transform: rotateY(180deg);
     }
+}
+.icon-img:hover {
+    animation: img-hover 6s ease-in-out;
 }
 .search {
     width: 50%;
